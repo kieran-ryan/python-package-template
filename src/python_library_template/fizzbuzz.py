@@ -7,18 +7,20 @@ _KEYWORD_MAPPING = {
 }
 
 
-def fizzbuzz(number: int, keyword_mapping: Optional[dict] = None) -> str:
+def fizzbuzz(
+    number: int | float, keyword_mapping: Optional[dict] = None
+) -> str:
     """Run FizzBuzz against a number.
 
-    Prints a number, except where printing each keyword mapped to
+    Returns a number, except where returning each keyword mapped to
     divisible keys in a dictionary.
 
     Args:
-        number (int): FizzBuzz will run against this integer.
-        keyword_mapping (dict|None): Number -> keyword mapping.
+        number (int | float): Number FizzBuzz will run against.
+        keyword_mapping (Optional[dict]): Number -> keyword mapping.
 
     Returns:
-        str: Integer, or keyword if mapped to divisible dictionary key.
+        str: Number, or keyword if mapped to divisible dictionary key.
     """
     if keyword_mapping is None:
         keyword_mapping = _KEYWORD_MAPPING

@@ -31,6 +31,13 @@ class TestFizzBuzz(unittest.TestCase):
             print("testing", i)
             assert fizzbuzz(i).isdigit()
 
+    def test_floats(self):
+        """Keywords or floats returned with floats as an argument."""
+        assert fizzbuzz(3.0) == "Fizz"
+        assert fizzbuzz(3.5) == "3.5"
+        assert fizzbuzz(5.0) == "Buzz"
+        assert fizzbuzz(15.0) == "FizzBuzz"
+
 
 class TestFizzBuzzCustom(unittest.TestCase):
     """Test `fizzbuzz` function with custom keyword mapping."""
@@ -63,3 +70,10 @@ class TestFizzBuzzCustom(unittest.TestCase):
         for i in [2, 7, 11, 14]:
             print("testing", i)
             assert fizzbuzz(i, self._CUSTOM_KEYWORDS).isdigit()
+
+    def test_floats(self):
+        """Keywords or floats returned with floats as an argument."""
+        assert fizzbuzz(4.0, self._CUSTOM_KEYWORDS) == "Biff"
+        assert fizzbuzz(3.5, self._CUSTOM_KEYWORDS) == "3.5"
+        assert fizzbuzz(9.0, self._CUSTOM_KEYWORDS) == "Fuzz"
+        assert fizzbuzz(36.0, self._CUSTOM_KEYWORDS) == "BiffFuzz"
