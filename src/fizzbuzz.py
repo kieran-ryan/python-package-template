@@ -1,5 +1,4 @@
 """FizzBuzz implementation."""
-
 from typing import Optional
 
 _KEYWORD_MAPPING = {

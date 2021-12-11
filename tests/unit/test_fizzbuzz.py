@@ -1,5 +1,4 @@
 """FizzBuzz unittests."""
-
 import unittest
 
 from fizzbuzz import fizzbuzz
