@@ -1,7 +1,9 @@
 """FizzBuzz implementation."""
 from typing import Optional
 
-_KEYWORD_MAPPING = {
+# Order will reflect output e.g. swapping values will result in
+# BuzzFizz on common dividends.
+_ORDERED_KEYWORD_MAPPING = {
     3: "Fizz",
     5: "Buzz",
 }
@@ -21,15 +23,25 @@ def fizzbuzz(
 
     Returns:
         str: Number, or keyword if mapped to divisible dictionary key.
+
+    Examples:
+        >>> fizzbuzz(3)
+        'Fizz'
+        >>> fizzbuzz(4)
+        '4'
+        >>> fizzbuzz(5)
+        'Buzz'
+        >>> fizzbuzz(15)
+        'FizzBuzz'
+        >>> fizzbuzz(7, {7: "Riff"})
+        'Riff'
     """
     if keyword_mapping is None:
-        keyword_mapping = _KEYWORD_MAPPING
+        keyword_mapping = _ORDERED_KEYWORD_MAPPING
 
-    output = ""
-
-    for key in keyword_mapping:
-        if number % key == 0:
-            output += keyword_mapping[key]
+    output = "".join(
+        [keyword_mapping[key] for key in keyword_mapping if number % key == 0]
+    )
 
     if not output:
         output = str(number)
