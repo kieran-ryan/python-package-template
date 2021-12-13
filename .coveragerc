@@ -1,0 +1,15 @@
+[html]
+directory = docs/coverage
+
+[report]
+fail_under = 90.00
+show_missing = True
+
+[run]
+branch = True
+omit =
+    */venv/*
+    */tests/*
+
+[xml]
+output = docs/coverage.xml
