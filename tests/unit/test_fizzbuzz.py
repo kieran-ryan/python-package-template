@@ -11,32 +11,32 @@ class TestFizzBuzz(unittest.TestCase):
         """`Fizz` returned."""
         for i in [3, 6, 9, 18]:
             print("testing", i)
-            assert fizzbuzz(i) == "Fizz"
+            self.assertEqual(fizzbuzz(i), "Fizz")
 
     def test_buzz(self):
         """`Buzz` returned."""
         for i in [5, 10, 20, 25]:
             print("testing", i)
-            assert fizzbuzz(i) == "Buzz"
+            self.assertEqual(fizzbuzz(i), "Buzz")
 
     def test_fizz_buzz(self):
         """`FizzBuzz` returned."""
         for i in [15, 30, 45, 60]:
             print("testing", i)
-            assert fizzbuzz(i) == "FizzBuzz"
+            self.assertEqual(fizzbuzz(i), "FizzBuzz")
 
     def test_unmapped_keys(self):
         """Digits returned for unmapped keys."""
         for i in [2, 7, 11, 14]:
             print("testing", i)
-            assert fizzbuzz(i).isdigit()
+            self.assertTrue(fizzbuzz(i).isdigit())
 
     def test_floats(self):
         """Keywords or floats returned with floats as an argument."""
-        assert fizzbuzz(3.0) == "Fizz"
-        assert fizzbuzz(3.5) == "3.5"
-        assert fizzbuzz(5.0) == "Buzz"
-        assert fizzbuzz(15.0) == "FizzBuzz"
+        self.assertEqual(fizzbuzz(3.0), "Fizz")
+        self.assertEqual(fizzbuzz(3.5), "3.5")
+        self.assertEqual(fizzbuzz(5.0), "Buzz")
+        self.assertEqual(fizzbuzz(15.0), "FizzBuzz")
 
 
 class TestFizzBuzzCustom(unittest.TestCase):
@@ -51,29 +51,29 @@ class TestFizzBuzzCustom(unittest.TestCase):
         """`Biff` returned."""
         for i in [4, 8, 12, 16]:
             print("testing", i)
-            assert fizzbuzz(i, self._CUSTOM_KEYWORDS) == "Biff"
+            self.assertEqual(fizzbuzz(i, self._CUSTOM_KEYWORDS), "Biff")
 
     def test_fuzz(self):
         """`Fuzz` returned."""
         for i in [9, 18, 27, 45]:
             print("testing", i)
-            assert fizzbuzz(i, self._CUSTOM_KEYWORDS) == "Fuzz"
+            self.assertEqual(fizzbuzz(i, self._CUSTOM_KEYWORDS), "Fuzz")
 
     def test_biff_fuzz(self):
         """`BiffFuzz` returned."""
         for i in [36, 72, 108, 144]:
             print("testing", i)
-            assert fizzbuzz(i, self._CUSTOM_KEYWORDS) == "BiffFuzz"
+            self.assertEqual(fizzbuzz(i, self._CUSTOM_KEYWORDS), "BiffFuzz")
 
     def test_unmapped_keys(self):
         """Digits returned for unmapped keys."""
         for i in [2, 7, 11, 14]:
             print("testing", i)
-            assert fizzbuzz(i, self._CUSTOM_KEYWORDS).isdigit()
+            self.assertTrue(fizzbuzz(i, self._CUSTOM_KEYWORDS).isdigit())
 
     def test_floats(self):
         """Keywords or floats returned with floats as an argument."""
-        assert fizzbuzz(4.0, self._CUSTOM_KEYWORDS) == "Biff"
-        assert fizzbuzz(3.5, self._CUSTOM_KEYWORDS) == "3.5"
-        assert fizzbuzz(9.0, self._CUSTOM_KEYWORDS) == "Fuzz"
-        assert fizzbuzz(36.0, self._CUSTOM_KEYWORDS) == "BiffFuzz"
+        self.assertEqual(fizzbuzz(4.0, self._CUSTOM_KEYWORDS), "Biff")
+        self.assertEqual(fizzbuzz(3.5, self._CUSTOM_KEYWORDS), "3.5")
+        self.assertEqual(fizzbuzz(9.0, self._CUSTOM_KEYWORDS), "Fuzz")
+        self.assertEqual(fizzbuzz(36.0, self._CUSTOM_KEYWORDS), "BiffFuzz")

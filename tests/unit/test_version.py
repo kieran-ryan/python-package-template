@@ -12,7 +12,7 @@ class TestVersion(unittest.TestCase):
     def test_version_is_valid(self):
         """Library version is valid."""
         parsed_version = version.parse(__version__)
-        assert isinstance(parsed_version, version.Version)
-        assert isinstance(parsed_version.major, int)
-        assert isinstance(parsed_version.minor, int)
-        assert isinstance(parsed_version.micro, int)
+        self.assertTrue(isinstance(parsed_version, version.Version))
+        self.assertTrue(isinstance(parsed_version.major, int))
+        self.assertTrue(isinstance(parsed_version.minor, int))
+        self.assertTrue(isinstance(parsed_version.micro, int))
