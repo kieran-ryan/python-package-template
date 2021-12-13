@@ -1,5 +1,7 @@
+coverage==6.2
 packaging==21.3
 pre-commit==2.16.0
 pytest==6.2.5
+pytest-cov==3.0.0
 pytest-pythonpath==0.7.3
 Sphinx==4.3.1
