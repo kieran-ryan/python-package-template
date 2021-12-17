@@ -8,7 +8,7 @@ from pathlib import Path
 
 repository_root_dir = Path(__file__).parents[2]
 source_code_package_dir = Path(
-    repository_root_dir, "src/pythonlib"
+    repository_root_dir, "pythonlib"
 )
 
 sys.path.insert(0, str(source_code_package_dir))
