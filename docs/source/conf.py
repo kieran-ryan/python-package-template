@@ -7,9 +7,7 @@ from pathlib import Path
 # Direct Sphinx to source code in other directories, to enable autodoc.
 
 repository_root_dir = Path(__file__).parents[2]
-source_code_package_dir = Path(
-    repository_root_dir, "python_library_template"
-)
+source_code_package_dir = Path(repository_root_dir, "python_library_template")
 
 sys.path.insert(0, str(source_code_package_dir))
 

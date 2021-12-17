@@ -9,9 +9,7 @@ _ORDERED_KEYWORD_MAPPING = {
 }
 
 
-def fizzbuzz(
-    number: int | float, keyword_mapping: Optional[dict] = None
-) -> str:
+def fizzbuzz(number: int | float, keyword_mapping: Optional[dict] = None) -> str:
     """Run FizzBuzz against a number.
 
     Returns a number, except where returning each keyword mapped to
