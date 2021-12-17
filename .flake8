@@ -1,10 +1,7 @@
 [flake8]
 exclude =
     __pycache__/,
-    .git/,
     dist/,
-    docs/,
-    tests/,
     venv/,
 count = True
 docstring-convention = google
