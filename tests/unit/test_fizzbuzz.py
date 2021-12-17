@@ -1,4 +1,4 @@
-"""FizzBuzz unittests."""
+"""FizzBuzz unit tests."""
 import unittest
 
 from fizzbuzz import fizzbuzz

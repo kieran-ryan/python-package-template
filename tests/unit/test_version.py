@@ -1,4 +1,4 @@
-"""Library version unittests."""
+"""Library version unit tests."""
 import unittest
 
 from packaging import version
