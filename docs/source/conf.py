@@ -8,7 +8,7 @@ from pathlib import Path
 
 repository_root_dir = Path(__file__).parents[2]
 source_code_package_dir = Path(
-    repository_root_dir, "pythonlib"
+    repository_root_dir, "python_library_template"
 )
 
 sys.path.insert(0, str(source_code_package_dir))
@@ -17,7 +17,7 @@ from version import __version__  # noqa
 
 # -- Project information -----------------------------------------------------
 
-project = "pythonlib"
+project = "python_library_template"
 copyright = "2021, Kieran Ryan"
 author = "Kieran Ryan"
 
