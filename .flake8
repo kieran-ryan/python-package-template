@@ -6,4 +6,6 @@ exclude =
     build,
     dist,
     venv,
+ignore =
+    R504,
 max-line-length = 88
