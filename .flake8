@@ -9,4 +9,5 @@ exclude =
 ignore =
     R504,
     SFS301,
+max-complexity = 10
 max-line-length = 88
