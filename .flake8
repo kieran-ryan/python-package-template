@@ -1,7 +1,9 @@
 [flake8]
-exclude =
-    __pycache__/,
-    dist/,
-    venv/,
 count = True
 docstring-convention = google
+exclude =
+    __pycache__,
+    build,
+    dist,
+    venv,
+max-line-length = 88
