@@ -20,6 +20,7 @@ A template repository for creating Python libraries.
 - Static analysis tool configuration:
   - [Sphinx](https://www.sphinx-doc.org/en/master/) - documentation
   - [flake8](https://flake8.pycqa.org/en/latest/) - [PEP8](https://www.python.org/dev/peps/pep-0008/) compliance
+  - [flake8-comprehensions](https://pypi.org/project/flake8-comprehensions/) - comprehension checking
   - [flake8-docstrings](https://github.com/PyCQA/flake8-docstrings) - [PEP257](https://www.python.org/dev/peps/pep-0257/) compliance
   - [mypy](https://mypy.readthedocs.io) - static type checking
   - [bandit](https://bandit.readthedocs.io/en/latest/) - common security issue detection
