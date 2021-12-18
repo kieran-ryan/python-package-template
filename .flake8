@@ -8,4 +8,5 @@ exclude =
     venv,
 ignore =
     R504,
+    SFS301,
 max-line-length = 88
