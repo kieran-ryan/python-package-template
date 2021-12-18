@@ -30,3 +30,7 @@ A template repository for creating Python libraries.
   - Repository tree structure
   - Python module
   - Unit tests
+
+## License
+
+`python-library-template` is licensed under the [MIT License](https://opensource.org/licenses/MIT)
