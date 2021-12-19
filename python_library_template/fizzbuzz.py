@@ -1,14 +1,18 @@
 """FizzBuzz implementation."""
 
+import collections
+
 # Order will reflect output e.g. swapping values will result in
 # BuzzFizz on common dividends.
-_ORDERED_KEYWORD_MAPPING = {
-    3: "Fizz",
-    5: "Buzz",
-}
+_KEYWORD_MAPPING: dict[int, str] = collections.OrderedDict(
+    {
+        3: "Fizz",
+        5: "Buzz",
+    }
+)
 
 
-def fizzbuzz(number: int | float, keyword_mapping: dict | None = None) -> str:
+def fizzbuzz(number: int | float, keyword_mapping: dict[int, str] | None = None) -> str:
     """Run FizzBuzz against a number.
 
     Returns a number, except where returning each keyword mapped to
@@ -16,7 +20,7 @@ def fizzbuzz(number: int | float, keyword_mapping: dict | None = None) -> str:
 
     Args:
         number (int | float): Number FizzBuzz will run against.
-        keyword_mapping (dict | None): Number -> keyword mapping.
+        keyword_mapping (dict[int, str] | None): Fizzbuzz keyword mapping.
 
     Returns:
         str: Number, or keyword if mapped to divisible dictionary key.
@@ -34,10 +38,10 @@ def fizzbuzz(number: int | float, keyword_mapping: dict | None = None) -> str:
         'Riff'
     """
     if keyword_mapping is None:
-        keyword_mapping = _ORDERED_KEYWORD_MAPPING
+        keyword_mapping = _KEYWORD_MAPPING
 
     output = "".join(
-        [keyword_mapping[key] for key in keyword_mapping if number % key == 0]
+        keyword_mapping[key] for key in keyword_mapping if number % key == 0
     )
 
     if not output:

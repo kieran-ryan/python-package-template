@@ -1,4 +1,5 @@
 """Configuration file for Sphinx documentation."""
+
 import sys
 from pathlib import Path
 
@@ -53,4 +54,4 @@ html_theme = "alabaster"
 # Paths containing custom static files (such as style sheets), relative
 # to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = []
+html_static_path: list[str] = []

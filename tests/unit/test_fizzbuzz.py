@@ -1,7 +1,8 @@
 """FizzBuzz unit tests."""
+
 import unittest
 
-from fizzbuzz import fizzbuzz
+from python_library_template.fizzbuzz import fizzbuzz
 
 
 class TestFizzBuzz(unittest.TestCase):
