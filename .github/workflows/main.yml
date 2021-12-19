@@ -75,4 +75,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install --requirement requirements-docs.txt
       - name: Build docs
-        run: make docs
+        run: |
+          make docs
+          cp -a docs/build/html/. docs/
