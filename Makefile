@@ -3,4 +3,4 @@ init:
 	python -m venv venv
 	. venv/bin/activate && pip install --requirement requirements-dev.txt
 docs:
-	cd docs && make html
+	cd docs && make html && cp -a ./build/html/. ./
