@@ -6,10 +6,10 @@ from pathlib import Path
 
 # Direct Sphinx to source code in other directories, to enable autodoc.
 
-repository_root_dir = Path(__file__).parents[2]
-source_code_package_dir = Path(repository_root_dir, "python_library_template")
+repository_base_dir = Path(__file__).parents[2]
+source_base_dir = Path(repository_base_dir, "python_library_template")
 
-sys.path.insert(0, str(source_code_package_dir))
+sys.path.insert(0, str(source_base_dir))
 
 from version import __version__  # noqa
 
@@ -53,4 +53,4 @@ html_theme = "alabaster"
 # Paths containing custom static files (such as style sheets), relative
 # to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static"]
+html_static_path = []

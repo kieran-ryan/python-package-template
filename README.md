@@ -1,10 +1,11 @@
 # Python Library Template
 
+![Release version](https://img.shields.io/badge/version-0.0.0-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python version](https://img.shields.io/badge/python-3.10-blue)
 ![Supported platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux-green)
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
-![Release version](https://img.shields.io/badge/version-0.0.0-green)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
 A template repository for creating Python libraries.
 
@@ -24,7 +25,8 @@ A template repository for creating Python libraries.
   - [flake8-docstrings](https://github.com/PyCQA/flake8-docstrings) - [PEP257](https://www.python.org/dev/peps/pep-0257/) compliance
   - [flake8-return](https://pypi.org/project/flake8-return/) - return value checking
   - [flake8-sfs](https://pypi.org/project/flake8-sfs/) - single string format checking
-  - [mypy](https://mypy.readthedocs.io) - static type checking
+  - [isort](https://pycqa.github.io/isort/) - [PEP8](https://www.python.org/dev/peps/pep-0008/) import compliance
+  - [mypy](https://mypy.readthedocs.io) - type checking
   - [bandit](https://bandit.readthedocs.io/en/latest/) - common security issue detection
   - [black](https://black.readthedocs.io/en/stable/) - code style formatting
   - [radon](https://pypi.org/project/radon/) - code quality metrics
