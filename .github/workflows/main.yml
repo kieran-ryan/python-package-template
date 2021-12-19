@@ -28,6 +28,8 @@ jobs:
         run: black . --check
       - name: Check unused imports
         run: pycln . --check
+      - name: Check import order
+        run: isort . --check
       - name: Check types
         run: mypy .
       - name: Check security issues

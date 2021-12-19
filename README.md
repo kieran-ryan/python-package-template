@@ -30,6 +30,7 @@ A template repository for creating Python libraries.
   - [bandit](https://bandit.readthedocs.io/en/latest/) - common security issue detection
   - [black](https://black.readthedocs.io/en/stable/) - code style formatting
   - [pycln](https://hadialqattan.github.io/pycln/#/) - unused import detection
+  - [pyupgrade](https://github.com/asottile/pyupgrade) - latest syntax upgrades
   - [radon](https://pypi.org/project/radon/) - code quality metrics
   - [coverage](https://coverage.readthedocs.io/en/6.2/) - test coverage metrics
 - Examples:

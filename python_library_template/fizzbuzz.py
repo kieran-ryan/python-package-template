@@ -1,5 +1,4 @@
 """FizzBuzz implementation."""
-from typing import Optional
 
 # Order will reflect output e.g. swapping values will result in
 # BuzzFizz on common dividends.
