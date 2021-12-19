@@ -25,11 +25,11 @@ jobs:
       - name: Lint Python code
         run: flake8 .
       - name: Check Python formatting
-        run: black .
+        run: black . --check
+      - name: Check unused imports
+        run: pycln . --check
       - name: Check types
         run: mypy .
-      - name: Check security issues
-        run: bandit .
       - name: Check security issues
         run: bandit .
 
