@@ -54,7 +54,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install --requirement requirements-test.txt
       - name: Run tests
-        run: pytest --cov
+        run: pytest
 
   build-docs:
     runs-on: ${{ matrix.os }}
