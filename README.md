@@ -17,7 +17,7 @@ A template repository for creating Python libraries.
   - `LICENSE` outlining usage rights
   - `Makefile` standardising commands
   - `OWNERS.md` outlining owners and roles
-  - `README.md` outlining purpose and description
+  - `README.md` overview documentation
 - Static analysis tool configuration:
   - [Sphinx](https://www.sphinx-doc.org/en/master/) - documentation
   - [flake8](https://flake8.pycqa.org/en/latest/) - [PEP8](https://www.python.org/dev/peps/pep-0008/) compliance
@@ -30,6 +30,7 @@ A template repository for creating Python libraries.
   - [bandit](https://bandit.readthedocs.io/en/latest/) - common security issue detection
   - [black](https://black.readthedocs.io/en/stable/) - code style formatting
   - [pycln](https://hadialqattan.github.io/pycln/#/) - unused import detection
+  - [pep8-naming](https://pypi.org/project/pep8-naming/) - [PEP8](https://www.python.org/dev/peps/pep-0008/) naming compliance
   - [pyupgrade](https://github.com/asottile/pyupgrade) - latest syntax upgrades
   - [radon](https://pypi.org/project/radon/) - code quality metrics
   - [coverage](https://coverage.readthedocs.io/en/6.2/) - test coverage metrics
