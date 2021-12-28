@@ -55,6 +55,8 @@ jobs:
           pip install --requirement requirements-test.txt
       - name: Run tests
         run: pytest
+      - name: Run doctests
+        run: pytest --doctest-modules python_library_template
 
   build-docs:
     runs-on: ${{ matrix.os }}
