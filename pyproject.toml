@@ -1,6 +1,23 @@
 [tool.black]
 experimental-string-processing = true
 
+[tool.coverage.html]
+directory = "docs/coverage"
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "*/venv/*",
+    "*/tests/*"
+]
+
+[tool.coverage.report]
+fail_under = 90.00
+show_missing = true
+
+[tool.coverage.xml]
+output = "docs/coverage/coverage.xml"
+
 [tool.isort]
 include_trailing_comma = true
 profile = "black"
