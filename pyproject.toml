@@ -1,2 +1,7 @@
 [tool.black]
-experimental-string-processing = "True"
+experimental-string-processing = true
+
+[tool.isort]
+include_trailing_comma = true
+profile = "black"
+src_paths = "python_library_template/"
