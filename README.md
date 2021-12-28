@@ -6,6 +6,7 @@
 ![Supported platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux-green)
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+![Pipeline status](https://github.com/kieran-ryan/python-library-template/actions/workflows/main.yml/badge.svg)
 
 A template repository for creating Python libraries.
 
