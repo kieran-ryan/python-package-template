@@ -5,3 +5,10 @@ experimental-string-processing = true
 include_trailing_comma = true
 profile = "black"
 src_paths = "python_library_template/"
+
+[tool.pytest.ini_options]
+addopts = "-rA -v"
+python_paths = "python_library_template/"
+testpaths = [
+    "tests",
+]
