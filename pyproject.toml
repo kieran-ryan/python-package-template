@@ -6,6 +6,11 @@ include_trailing_comma = true
 profile = "black"
 src_paths = "python_library_template/"
 
+[tool.mypy]
+mypy_path = "python_library_template/"
+files = "."
+exclude = "venv|__init__.py|tests|docs"
+
 [tool.pytest.ini_options]
 addopts = "-rA -v"
 python_paths = "python_library_template/"
