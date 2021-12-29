@@ -31,6 +31,6 @@ setuptools.setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.10",
     ],
-    packages=["__title__"],
+    packages=[metadata["__title__"]],
     include_package_data=True,
 )

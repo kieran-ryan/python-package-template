@@ -26,16 +26,16 @@ def fizzbuzz(number: int | float, keyword_mapping: dict[int, str] | None = None)
         Number, or keyword if mapped to divisible dictionary key.
 
     Examples:
-    >>> fizzbuzz(3)
-    'Fizz'
-    >>> fizzbuzz(4)
-    '4'
-    >>> fizzbuzz(5)
-    'Buzz'
-    >>> fizzbuzz(15)
-    'FizzBuzz'
-    >>> fizzbuzz(7, {7: "Riff"})
-    'Riff'
+        >>> fizzbuzz(3)
+        'Fizz'
+        >>> fizzbuzz(4)
+        '4'
+        >>> fizzbuzz(5)
+        'Buzz'
+        >>> fizzbuzz(15)
+        'FizzBuzz'
+        >>> fizzbuzz(7, {7: "Riff"})
+        'Riff'
     """
     if keyword_mapping is None:
         keyword_mapping = _KEYWORD_MAPPING
