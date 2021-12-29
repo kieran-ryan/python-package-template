@@ -42,4 +42,4 @@ A template repository for creating Python libraries.
 
 ## License
 
-`python-library-template` is licensed under the [MIT License](https://opensource.org/licenses/MIT)
+`pysamplelib` is licensed under the [MIT License](https://opensource.org/licenses/MIT)

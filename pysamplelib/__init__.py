@@ -1,4 +1,4 @@
-"""Top-level module for the Python Library Template."""
+"""Top-level package of `pysamplelib`."""
 
 from .__version__ import __version__
 from .fizzbuzz import fizzbuzz

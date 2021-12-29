@@ -8,7 +8,7 @@ import sys
 # Direct Sphinx to source code in other directories, to enable autodoc.
 
 repository_base_dir = pathlib.Path(__file__).parents[2]
-source_base_dir = repository_base_dir / "python_library_template"
+source_base_dir = repository_base_dir / "pysamplelib"
 
 sys.path.insert(0, str(source_base_dir))
 

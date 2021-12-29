@@ -2,7 +2,7 @@
 
 import unittest
 
-import python_library_template
+import pysamplelib
 
 
 class TestLibrary(unittest.TestCase):
@@ -10,4 +10,4 @@ class TestLibrary(unittest.TestCase):
 
     def test_all_contains_version(self):
         """Library top-level contains version information."""
-        self.assertTrue("__version__" in python_library_template.__all__)
+        self.assertTrue("__version__" in pysamplelib.__all__)

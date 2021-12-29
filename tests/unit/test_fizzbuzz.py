@@ -2,7 +2,7 @@
 
 import unittest
 
-from python_library_template.fizzbuzz import fizzbuzz
+from pysamplelib.fizzbuzz import fizzbuzz
 
 
 class TestFizzBuzz(unittest.TestCase):

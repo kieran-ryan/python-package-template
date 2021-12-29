@@ -1,3 +1,10 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
 [tool.black]
 experimental-string-processing = true
 
@@ -21,7 +28,7 @@ output = "docs/coverage/coverage.xml"
 [tool.isort]
 include_trailing_comma = true
 profile = "black"
-src_paths = "python_library_template/"
+src_paths = "pysamplelib/"
 
 [tool.mypy]
 mypy_path = "./"
@@ -30,7 +37,7 @@ exclude = "venv|__init__.py|tests|docs"
 
 [tool.pytest.ini_options]
 addopts = "-rA -v"
-python_paths = "python_library_template/"
+python_paths = "pysamplelib/"
 testpaths = [
     "tests",
 ]

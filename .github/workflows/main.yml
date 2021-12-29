@@ -56,7 +56,7 @@ jobs:
       - name: Run tests
         run: pytest
       - name: Run doctests
-        run: pytest --doctest-modules python_library_template
+        run: pytest --doctest-modules pysamplelib
 
   build-docs:
     runs-on: ${{ matrix.os }}
