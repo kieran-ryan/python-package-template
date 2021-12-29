@@ -12,7 +12,7 @@ README = (repository_base_dir / "README.md").read_text()
 source_base_dir = repository_base_dir / "pysamplelib"
 metadata: dict[str, str] = {}
 with open(source_base_dir / "__version__.py") as version_file:
-    exec(version_file.read(), metadata)
+    exec(version_file.read(), metadata)  # nosec: B102
 
 setuptools.setup(
     name=metadata["__title__"],

@@ -40,6 +40,45 @@ A template repository for creating Python libraries.
   - Python module
   - Unit tests
 
+## Installation
+
+`pysamplelib` is available via Test PyPI (via [Platform Wheels](https://packaging.python.org/guides/distributing-packages-using-setuptools/#platform-wheels)):
+```
+pip install -i https://test.pypi.org/simple/ pysamplelib
+```
+
+## Examples
+
+Running fizzbuzz against a number:
+
+```python
+import pysamplelib
+
+print(pysamplelib.fizzbuzz(5))
+```
+
+Running fizzbuzz against a number range:
+
+```python
+import pysamplelib
+
+for number in range(1, 101):
+  print(pysamplelib.fizzbuzz(number))
+```
+
+Running fizzbuzz against a number, using a custom keyword mapping:
+
+```python
+import pysamplelib
+
+CUSTOM_KEYWORD_MAPPING = {
+    7: "Riff",
+    9: "Blip",
+}
+
+print(pysamplelib.fizzbuzz(7, CUSTOM_KEYWORD_MAPPING))
+```
+
 ## License
 
 `pysamplelib` is licensed under the [MIT License](https://opensource.org/licenses/MIT)
