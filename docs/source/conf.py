@@ -1,30 +1,30 @@
 """Configuration file for Sphinx documentation."""
 
+import pathlib
 import sys
-from pathlib import Path
 
 # -- Path setup --------------------------------------------------------------
 
 # Direct Sphinx to source code in other directories, to enable autodoc.
 
-repository_base_dir = Path(__file__).parents[2]
-source_base_dir = Path(repository_base_dir, "python_library_template")
+repository_base_dir = pathlib.Path(__file__).parents[2]
+source_base_dir = repository_base_dir / "python_library_template"
 
 sys.path.insert(0, str(source_base_dir))
 
-from version import __version__  # noqa
+import __version__  # noqa
 
 # -- Project information -----------------------------------------------------
 
-project = "python_library_template"
-copyright = "2021, Kieran Ryan"
-author = "Kieran Ryan"
+project = __version__.__title__
+copyright = __version__.__copyright__
+author = __version__.__author__
 
 # The short X.Y.Z version:
-version = __version__
+version = __version__.__version__
 
 # The full version, including alpha/beta/rc tags:
-release = __version__
+release = __version__.__version__
 
 # -- General configuration ---------------------------------------------------
 

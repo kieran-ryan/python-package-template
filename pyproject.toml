@@ -24,7 +24,7 @@ profile = "black"
 src_paths = "python_library_template/"
 
 [tool.mypy]
-mypy_path = "python_library_template/"
+mypy_path = "./"
 files = "."
 exclude = "venv|__init__.py|tests|docs"
 

@@ -4,7 +4,7 @@ import unittest
 
 from packaging import version
 
-from version import __version__
+from __version__ import __version__
 
 
 class TestVersion(unittest.TestCase):

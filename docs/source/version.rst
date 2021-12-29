@@ -10,6 +10,6 @@ Library version information.
 Code Documentation
 ------------------
 
-   .. automodule:: version
+   .. automodule:: __version__
       :members:
       :undoc-members:
