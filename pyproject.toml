@@ -31,7 +31,7 @@ profile = "black"
 src_paths = "pysamplelib/"
 
 [tool.mypy]
-mypy_path = "./"
+mypy_path = "pysamplelib/"
 files = "."
 exclude = "venv|__init__.py|tests|docs"
 
