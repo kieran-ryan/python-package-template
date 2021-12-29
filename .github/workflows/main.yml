@@ -54,7 +54,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install --requirement requirements-test.txt
       - name: Run tests
-        run: pytest
+        run: make coverage
       - name: Run doctests
         run: pytest --doctest-modules pysamplelib
 
@@ -77,5 +77,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install --requirement requirements-docs.txt
       - name: Build docs
-        run: |
-          make docs
+        run: make docs

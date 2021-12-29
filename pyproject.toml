@@ -36,7 +36,7 @@ files = "."
 exclude = "venv|__init__.py|tests|docs"
 
 [tool.pytest.ini_options]
-addopts = "-rA -v"
+addopts = "-rA --verbose"
 python_paths = "pysamplelib/"
 testpaths = [
     "tests",
