@@ -43,8 +43,9 @@ A template repository for creating Python libraries.
 ## Installation
 
 `pysamplelib` is available via Test PyPI (via [Platform Wheels](https://packaging.python.org/guides/distributing-packages-using-setuptools/#platform-wheels)):
+
 ```
-pip install -i https://test.pypi.org/simple/ pysamplelib
+pip install --index-url https://test.pypi.org/simple/ pysamplelib
 ```
 
 ## Examples
