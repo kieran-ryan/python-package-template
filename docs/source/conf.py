@@ -5,16 +5,14 @@ import sys
 
 # -- Path setup --------------------------------------------------------------
 
-# Direct Sphinx to source code in other directories, to enable autodoc.
-
 repository_base_dir = pathlib.Path(__file__).parents[2]
 source_base_dir = repository_base_dir / "pysamplelib"
+
+# -- Project information -----------------------------------------------------
 
 sys.path.insert(0, str(source_base_dir))
 
 import __version__  # noqa
-
-# -- Project information -----------------------------------------------------
 
 project = __version__.__title__
 copyright = __version__.__copyright__
@@ -41,9 +39,9 @@ templates_path = ["_templates"]
 # Patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = [
-    "_build",
-    "Thumbs.db",
     ".DS_Store",
+    "Thumbs.db",
+    "_build",
 ]
 
 # -- Options for HTML output -------------------------------------------------

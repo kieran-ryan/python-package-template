@@ -20,10 +20,10 @@ def fizzbuzz(number: int | float, keyword_mapping: dict[int, str] | None = None)
 
     Args:
         number: Number FizzBuzz will run against.
-        keyword_mapping: Fizzbuzz keyword mapping.
+        keyword_mapping: FizzBuzz keyword mapping.
 
     Returns:
-        Number, or keyword if mapped to divisible dictionary key.
+        Number, or keyword if mapped to a divisible dictionary key.
 
     Examples:
         >>> fizzbuzz(3)

@@ -28,16 +28,17 @@ output = "docs/coverage/coverage.xml"
 [tool.isort]
 include_trailing_comma = true
 profile = "black"
-src_paths = "pysamplelib/"
+src_paths = "pysamplelib"
 
 [tool.mypy]
-mypy_path = "pysamplelib/"
+mypy_path = "pysamplelib"
 files = "."
 exclude = "venv|__init__.py|tests|docs"
 
 [tool.pytest.ini_options]
-addopts = "-rA --verbose"
-python_paths = "pysamplelib/"
+addopts = "--doctest-modules  -rA --verbose"
+python_paths = "pysamplelib"
 testpaths = [
+    "pysamplelib",
     "tests",
 ]

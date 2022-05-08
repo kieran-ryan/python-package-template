@@ -2,9 +2,9 @@
 
 import unittest
 
-from packaging import version
+import packaging.version
 
-from __version__ import __version__
+from pysamplelib.__version__ import __version__
 
 
 class TestVersion(unittest.TestCase):
@@ -12,8 +12,8 @@ class TestVersion(unittest.TestCase):
 
     def test_version_is_valid(self):
         """Library version is valid."""
-        parsed_version = version.parse(__version__)
-        self.assertTrue(isinstance(parsed_version, version.Version))
+        parsed_version = packaging.version.parse(__version__)
+        self.assertTrue(isinstance(parsed_version, packaging.version.Version))
         self.assertTrue(isinstance(parsed_version.major, int))
         self.assertTrue(isinstance(parsed_version.minor, int))
         self.assertTrue(isinstance(parsed_version.micro, int))
