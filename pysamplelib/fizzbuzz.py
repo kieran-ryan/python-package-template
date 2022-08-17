@@ -37,14 +37,8 @@ def fizzbuzz(number: int | float, keyword_mapping: dict[int, str] | None = None)
         >>> fizzbuzz(7, {7: "Riff"})
         'Riff'
     """
-    if keyword_mapping is None:
-        keyword_mapping = _KEYWORD_MAPPING
+    keywords = keyword_mapping or _KEYWORD_MAPPING
 
-    output = "".join(
-        keyword_mapping[key] for key in keyword_mapping if number % key == 0
-    )
+    output = "".join(keywords[key] for key in keywords if number % key == 0)
 
-    if not output:
-        output = str(number)
-
-    return output
+    return output or str(number)
