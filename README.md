@@ -30,6 +30,7 @@ A template repository for creating Python libraries.
   - [mypy](https://mypy.readthedocs.io) - type checking
   - [bandit](https://bandit.readthedocs.io/en/latest/) - common security issue detection
   - [black](https://black.readthedocs.io/en/stable/) - code style formatting
+  - [blacken-docs](https://pypi.org/project/blacken-docs/) - code style formatting in docs
   - [pycln](https://hadialqattan.github.io/pycln/#/) - unused import detection
   - [pep8-naming](https://pypi.org/project/pep8-naming/) - [PEP8](https://www.python.org/dev/peps/pep-0008/) naming compliance
   - [pyupgrade](https://github.com/asottile/pyupgrade) - latest syntax upgrades
@@ -64,7 +65,7 @@ Running fizzbuzz against a number range:
 import pysamplelib
 
 for number in range(1, 101):
-  print(pysamplelib.fizzbuzz(number))
+    print(pysamplelib.fizzbuzz(number))
 ```
 
 Running fizzbuzz against a number, using a custom keyword mapping:
