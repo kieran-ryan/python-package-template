@@ -1,9 +1,14 @@
 [build-system]
+build-backend = "setuptools.build_meta"
 requires = [
     "setuptools>=42",
     "wheel"
 ]
-build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysamplelib"
+description = "A sample Python library."
+author = "Kieran Ryan"
 
 [tool.black]
 experimental-string-processing = true
@@ -26,10 +31,20 @@ show_missing = true
 output = "docs/coverage/coverage.xml"
 
 [tool.isort]
-force_single_line = true
 include_trailing_comma = true
 profile = "black"
 src_paths = "pysamplelib"
+
+[tool.ruff]
+select = ["ALL", "I002"]
+ignore = ["ANN", "ARG", "DTZ005", "D203", "D213", "G004", "INP001", "S101", "S102", "T201"]
+
+[tool.ruff.isort]
+force-single-line = true
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
 
 [tool.mypy]
 mypy_path = "pysamplelib"

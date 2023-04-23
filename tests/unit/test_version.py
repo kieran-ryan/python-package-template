@@ -1,5 +1,7 @@
 """Library version unit tests."""
 
+from __future__ import annotations
+
 import unittest
 
 import packaging.version
@@ -13,7 +15,7 @@ class TestVersion(unittest.TestCase):
     def test_version_is_valid(self):
         """Library version is valid."""
         parsed_version = packaging.version.parse(__version__)
-        self.assertTrue(isinstance(parsed_version, packaging.version.Version))
-        self.assertTrue(isinstance(parsed_version.major, int))
-        self.assertTrue(isinstance(parsed_version.minor, int))
-        self.assertTrue(isinstance(parsed_version.micro, int))
+        assert isinstance(parsed_version, packaging.version.Version)
+        assert isinstance(parsed_version.major, int)
+        assert isinstance(parsed_version.minor, int)
+        assert isinstance(parsed_version.micro, int)

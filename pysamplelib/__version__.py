@@ -1,4 +1,5 @@
 """Library metadata."""
+from __future__ import annotations
 
 MAJOR = 0
 MINOR = 1

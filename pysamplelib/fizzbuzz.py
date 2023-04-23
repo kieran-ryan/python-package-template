@@ -1,5 +1,7 @@
 """FizzBuzz implementation."""
 
+from __future__ import annotations
+
 import collections
 
 # Order will reflect output e.g. swapping values will result in
@@ -8,7 +10,7 @@ _KEYWORD_MAPPING: dict[int, str] = collections.OrderedDict(
     {
         3: "Fizz",
         5: "Buzz",
-    }
+    },
 )
 
 

@@ -9,6 +9,7 @@ coverage:
 
 publish:
 	pip install twine
+	pip install build
 	python -m build
 	python -m twine upload --repository testpypi dist/*
 	rm -rf dist pysamplelib.egg-info

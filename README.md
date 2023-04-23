@@ -21,17 +21,11 @@ A template repository for creating Python libraries.
   - `README.md` overview documentation
 - Static analysis tool configuration:
   - [Sphinx](https://www.sphinx-doc.org/en/master/) - documentation
-  - [flake8](https://flake8.pycqa.org/en/latest/) - [PEP8](https://www.python.org/dev/peps/pep-0008/) compliance
-  - [flake8-comprehensions](https://pypi.org/project/flake8-comprehensions/) - comprehension checking
-  - [flake8-docstrings](https://github.com/PyCQA/flake8-docstrings) - [PEP257](https://www.python.org/dev/peps/pep-0257/) compliance
-  - [flake8-return](https://pypi.org/project/flake8-return/) - return value checking
-  - [flake8-sfs](https://pypi.org/project/flake8-sfs/) - single string format checking
-  - [isort](https://pycqa.github.io/isort/) - [PEP8](https://www.python.org/dev/peps/pep-0008/) import compliance
+  - [ruff](https://github.com/charliermarsh/ruff) - linting
   - [mypy](https://mypy.readthedocs.io) - type checking
   - [bandit](https://bandit.readthedocs.io/en/latest/) - common security issue detection
   - [black](https://black.readthedocs.io/en/stable/) - code style formatting
   - [blacken-docs](https://pypi.org/project/blacken-docs/) - code style formatting in docs
-  - [pycln](https://hadialqattan.github.io/pycln/#/) - unused import detection
   - [pep8-naming](https://pypi.org/project/pep8-naming/) - [PEP8](https://www.python.org/dev/peps/pep-0008/) naming compliance
   - [pyupgrade](https://github.com/asottile/pyupgrade) - latest syntax upgrades
   - [radon](https://pypi.org/project/radon/) - code quality metrics

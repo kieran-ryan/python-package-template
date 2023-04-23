@@ -1,17 +1,19 @@
 """Library build script."""
 
-import pathlib
+from __future__ import annotations
 
-import setuptools  # type: ignore
+from pathlib import Path
+
+import setuptools
 
 # Extract README content
-repository_base_dir = pathlib.Path(__file__).parent
+repository_base_dir = Path(__file__).parent
 README = (repository_base_dir / "README.md").read_text()
 
 # Extract library metadata
 source_base_dir = repository_base_dir / "pysamplelib"
 metadata: dict[str, str] = {}
-with open(source_base_dir / "__version__.py") as version_file:
+with (source_base_dir / "__version__.py").open() as version_file:
     exec(version_file.read(), metadata)  # nosec: B102
 
 setuptools.setup(

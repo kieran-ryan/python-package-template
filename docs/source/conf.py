@@ -1,5 +1,7 @@
 """Configuration file for Sphinx documentation."""
 
+from __future__ import annotations
+
 import pathlib
 import sys
 
@@ -8,14 +10,14 @@ import sys
 repository_base_dir = pathlib.Path(__file__).parents[2]
 source_base_dir = repository_base_dir / "pysamplelib"
 
-# -- Project information -----------------------------------------------------
-
 sys.path.insert(0, str(source_base_dir))
 
-import __version__  # noqa
+# -- Project information -----------------------------------------------------
+
+import __version__  # noqa: E402
 
 project = __version__.__title__
-copyright = __version__.__copyright__
+copyright = __version__.__copyright__  # noqa: A001
 author = __version__.__author__
 
 # The short X.Y.Z version:
