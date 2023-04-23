@@ -1,7 +1,7 @@
 """Library metadata."""
 
 MAJOR = 0
-MINOR = 0
+MINOR = 1
 MICRO = 0
 
 __author__ = "Kieran Ryan"

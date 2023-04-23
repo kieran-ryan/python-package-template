@@ -1,8 +1,10 @@
 --requirement requirements.txt
 --requirement requirements-docs.txt
 --requirement requirements-test.txt
+absolufy-imports==0.3.1
 bandit==1.7.4
 black==22.6.0
+blacken-docs==1.12.1
 flake8==5.0.4
 flake8-comprehensions==3.10.0
 flake8-docstrings==1.6.0

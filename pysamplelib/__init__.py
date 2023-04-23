@@ -1,7 +1,7 @@
 """Top-level package of `pysamplelib`."""
 
-from .__version__ import __version__
-from .fizzbuzz import fizzbuzz
+from pysamplelib.__version__ import __version__
+from pysamplelib.fizzbuzz import fizzbuzz
 
 __all__ = [
     "__version__",
