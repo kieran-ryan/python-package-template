@@ -35,6 +35,12 @@ include_trailing_comma = true
 profile = "black"
 src_paths = "pysamplelib"
 
+[tool.radon]
+exclude = "venv/*,tests/*"
+show_complexity = true
+show_mi = true
+total_average = true
+
 [tool.ruff]
 select = ["ALL", "I002"]
 ignore = ["ANN", "ARG", "DTZ005", "D203", "D213", "G004", "INP001", "S101", "S102", "T201"]
