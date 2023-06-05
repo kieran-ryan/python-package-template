@@ -1,14 +1,11 @@
 [build-system]
 build-backend = "setuptools.build_meta"
-requires = [
-    "setuptools>=42",
-    "wheel"
-]
+requires = ["setuptools>=42", "wheel"]
 
 [project]
+author = "Kieran Ryan"
 name = "pysamplelib"
 description = "A sample Python library."
-author = "Kieran Ryan"
 
 [tool.black]
 experimental-string-processing = true
@@ -18,10 +15,7 @@ directory = "docs/coverage"
 
 [tool.coverage.run]
 branch = true
-omit = [
-    "*/venv/*",
-    "*/tests/*",
-]
+omit = ["*/venv/*", "*/tests/*"]
 
 [tool.coverage.report]
 fail_under = 90.00
@@ -31,7 +25,6 @@ show_missing = true
 output = "docs/coverage/coverage.xml"
 
 [tool.isort]
-include_trailing_comma = true
 profile = "black"
 src_paths = "pysamplelib"
 
@@ -43,10 +36,20 @@ total_average = true
 
 [tool.ruff]
 select = ["ALL", "I002"]
-ignore = ["ANN", "ARG", "DTZ005", "D203", "D213", "G004", "INP001", "S101", "S102", "T201"]
+ignore = [
+    "ANN",
+    "ARG",
+    "DTZ005",
+    "D203",
+    "D213",
+    "G004",
+    "INP001",
+    "S101",
+    "S102",
+    "T201",
+]
 
 [tool.ruff.isort]
-force-single-line = true
 required-imports = ["from __future__ import annotations"]
 
 [tool.ruff.pydocstyle]
@@ -57,10 +60,10 @@ mypy_path = "pysamplelib"
 files = "."
 exclude = "__init__.py|setup.py|docs|tests|venv"
 
+[tool.pylint]
+recursive = true
+ignore = ["docs", "tests", "venv"]
+
 [tool.pytest.ini_options]
-addopts = "--doctest-modules  -rA --verbose"
-python_paths = "pysamplelib"
-testpaths = [
-    "pysamplelib",
-    "tests",
-]
+addopts = "--doctest-modules -rA --verbose"
+testpaths = ["pysamplelib", "tests"]

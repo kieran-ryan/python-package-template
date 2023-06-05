@@ -1,5 +1,4 @@
 """FizzBuzz implementation."""
-
 from __future__ import annotations
 
 import collections
@@ -17,15 +16,17 @@ _KEYWORD_MAPPING: dict[int, str] = collections.OrderedDict(
 def fizzbuzz(number: int | float, keyword_mapping: dict[int, str] | None = None) -> str:
     """Run FizzBuzz against a number.
 
-    Returns a number, except where returning each keyword mapped to
-    divisible keys in a dictionary.
+    Returns the number itself, unless it is divisible by any of the keys
+    in the keyword mapping dictionary, in which case it returns the
+    corresponding value from the dictionary.
 
     Args:
-        number: Number FizzBuzz will run against.
+        number: The number FizzBuzz will run against.
         keyword_mapping: FizzBuzz keyword mapping.
 
     Returns:
-        Number, or keyword if mapped to a divisible dictionary key.
+        The number or the corresponding keyword if the number is
+        divisible by a key.
 
     Examples:
         >>> fizzbuzz(3)

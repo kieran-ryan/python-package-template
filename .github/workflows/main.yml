@@ -32,6 +32,8 @@ jobs:
         run: mypy .
       - name: Check security issues
         run: bandit .
+      - name: Check performance issues
+        run: perflint .
 
   run-tests:
     runs-on: ${{ matrix.os }}

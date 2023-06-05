@@ -20,6 +20,15 @@ repos:
     rev: 22.6.0
     hooks:
       - id: black
+  - repo: https://github.com/charliemarsh/ruff-pre-commit
+    rev: "v0.0.260"
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+  - repo: https://github.com/tonybaloney/perflint
+    rev: c07391c17671c3c9d5a7fd69120d1f570e268d58
+    hooks:
+      - id: perflint
   - repo: https://github.com/asottile/blacken-docs
     rev: v1.12.1
     hooks:
