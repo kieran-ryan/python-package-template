@@ -1,6 +1,6 @@
 # Python Library Template
 
-![Release version](https://img.shields.io/badge/version-0.0.0-green)
+[![Release version](https://img.shields.io/badge/dynamic/json?color=green&label=version&query=%24.info.version&url=https%3A%2F%2Ftest.pypi.org%2Fpypi%2Fpysamplelib%2Fjson)](https://test.pypi.org/pypi/pysamplelib)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python version](https://img.shields.io/badge/python-3.10-blue)
 ![Supported platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Windows%20%7C%20Linux-green)
