@@ -1,4 +1,3 @@
---requirement requirements.txt
 --requirement requirements-docs.txt
 --requirement requirements-test.txt
 absolufy-imports==0.3.1

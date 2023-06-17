@@ -12,7 +12,7 @@ repos:
       - id: end-of-file-fixer
       - id: requirements-txt-fixer
       - id: trailing-whitespace
-  -   repo: https://github.com/MarcoGorelli/absolufy-imports
+  - repo: https://github.com/MarcoGorelli/absolufy-imports
     rev: v0.3.0
     hooks:
     -   id: absolufy-imports
@@ -20,7 +20,7 @@ repos:
     rev: 22.6.0
     hooks:
       - id: black
-  - repo: https://github.com/charliemarsh/ruff-pre-commit
+  - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: "v0.0.260"
     hooks:
       - id: ruff
@@ -29,14 +29,11 @@ repos:
     rev: c07391c17671c3c9d5a7fd69120d1f570e268d58
     hooks:
       - id: perflint
+        args: ["--rcfile=pyproject.toml"]
   - repo: https://github.com/asottile/blacken-docs
     rev: v1.12.1
     hooks:
       - id: blacken-docs
-  - repo: https://github.com/PyCQA/flake8
-    rev: 5.0.4
-    hooks:
-      - id: flake8
   - repo: https://github.com/asottile/pyupgrade
     rev: v2.37.3
     hooks:
