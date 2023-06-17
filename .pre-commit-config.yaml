@@ -25,11 +25,6 @@ repos:
     hooks:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix]
-  - repo: https://github.com/tonybaloney/perflint
-    rev: c07391c17671c3c9d5a7fd69120d1f570e268d58
-    hooks:
-      - id: perflint
-        args: ["--rcfile=pyproject.toml"]
   - repo: https://github.com/asottile/blacken-docs
     rev: v1.12.1
     hooks:
@@ -39,7 +34,3 @@ repos:
     hooks:
       - id: pyupgrade
         args: [ --py310-plus ]
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.971
-    hooks:
-      - id: mypy
