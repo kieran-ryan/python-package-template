@@ -7,10 +7,12 @@ init:
 coverage:
 	pytest --cov-report term --cov-report html --cov-report xml --cov=pysamplelib
 
-publish:
+build:
 	pip install build
-	pip install twine
 	python -m build
+
+publish:
+	pip install twine
 	python -m twine upload --repository testpypi dist/*
 
 docs:

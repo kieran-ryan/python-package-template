@@ -26,9 +26,9 @@ A template repository for creating Python packages.
   - [black](https://black.readthedocs.io/en/stable/) - code style formatting
   - [blacken-docs](https://pypi.org/project/blacken-docs/) - code style formatting in docs
   - [pyupgrade](https://github.com/asottile/pyupgrade) - latest syntax upgrades
-  - [radon](https://pypi.org/project/radon/) - code quality metrics
+  - [radon](https://pypi.org/project/radon/) - code quality
   - [pytest](https://docs.pytest.org) - testing
-  - [coverage](https://coverage.readthedocs.io/en/6.2/) - test coverage metrics
+  - [coverage](https://coverage.readthedocs.io/en/6.2/) - test coverage
   - [sphinx](https://www.sphinx-doc.org/en/master/) - documentation
   - [build](https://github.com/pypa/build) - packaging
   - [twine](https://twine.readthedocs.io/en/stable/pip) - deployment
