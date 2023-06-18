@@ -5,6 +5,8 @@ from __future__ import annotations
 import pathlib
 import sys
 
+import tomli as tomllib
+
 # -- Path setup --------------------------------------------------------------
 
 repository_base_dir = pathlib.Path(__file__).parents[2]
@@ -16,9 +18,15 @@ sys.path.insert(0, str(source_base_dir))
 
 import __version__  # noqa: E402
 
-project = __version__.__title__
-copyright = __version__.__copyright__  # noqa: A001
-author = __version__.__author__
+with (repository_base_dir / "pyproject.toml").open("rb") as f:
+    pyproject_toml = tomllib.load(f)
+toml_config = pyproject_toml.get("project")
+project_metadata = {
+    k.replace("--", "").replace("-", "_"): v for k, v in toml_config.items()
+}
+
+project = project_metadata["name"]
+authors = project_metadata["authors"]
 
 # The short X.Y.Z version:
 version = __version__.__version__

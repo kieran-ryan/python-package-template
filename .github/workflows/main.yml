@@ -26,8 +26,6 @@ jobs:
         run: ruff .
       - name: Check Python formatting
         run: black . --check
-      - name: Absolute imports
-        run: absolufy-imports $(find pysamplelib -name "*.py" | tr "\n" " ")
       - name: Check types
         run: mypy .
       - name: Check security issues

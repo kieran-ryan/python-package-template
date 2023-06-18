@@ -1,7 +1,7 @@
 Version
 =======
 
-Library version information.
+Package version information.
 
 .. toctree::
    :maxdepth: 2

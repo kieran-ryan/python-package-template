@@ -1,4 +1,4 @@
-"""Library version unit tests."""
+"""Package version unit tests."""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ class TestVersion(unittest.TestCase):
     """Test `version.py` contains a valid `__version__`."""
 
     def test_version_is_valid(self):
-        """Library version is valid."""
+        """Package version is valid."""
         parsed_version = packaging.version.parse(__version__)
         assert isinstance(parsed_version, packaging.version.Version)
         assert isinstance(parsed_version.major, int)

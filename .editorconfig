@@ -1,2 +1,5 @@
 [*]
 indent_style = space
+
+[Makefile]
+indent_style = tab

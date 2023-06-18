@@ -1,11 +1,30 @@
 [build-system]
-build-backend = "setuptools.build_meta"
-requires = ["setuptools>=42", "wheel"]
+build-backend = "flit.buildapi"
+requires = ["flit"]
 
 [project]
-author = "Kieran Ryan"
+authors = [{ name = "Kieran Ryan" }]
 name = "pysamplelib"
-description = "A sample Python library."
+description = "A sample Python package."
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/kieran-ryan/python-package-template/tree/main#readme"
+Source = "https://github.com/kieran-ryan/python-package-template"
+Tracker = "https://github.com/kieran-ryan/python-package-template/issues"
+
+[tool.flit.module]
+name = "pysamplelib"
 
 [tool.bandit]
 exclude_dirs = ["tests", "venv"]
@@ -43,13 +62,12 @@ ignore = [
     "ANN",    # flake8-annotations
     "ARG",    # flake8-unused-arguments
     "DTZ005", # call-datetime-now-without-tzinfo
-    "D203",
-    "D213",
+    "D203",   # one-blank-line-before-class
+    "D213",   # multi-line-summary-second-line
     "G004",   # logging-f-string
-    "INP001",
-    "S101",
-    "S102",
-    "T201",
+    "INP001", # implicit-namespace-package
+    "S101",   # assert
+    "T201",   # sys-version-info0-eq3
 ]
 
 [tool.ruff.isort]

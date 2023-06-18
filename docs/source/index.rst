@@ -1,7 +1,7 @@
-.. python-library-template documentation master file, created by
+.. python-package-template documentation master file, created by
    sphinx-quickstart on Sun Dec 13 09:34:56 2021.
 
-Python Library Template
+Python Package Template
 =======================
 
 .. toctree::

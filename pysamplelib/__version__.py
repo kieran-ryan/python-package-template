@@ -1,6 +1,6 @@
-"""Library metadata.
+"""Package version.
 
-This library uses Semantic Versioning, see: https://semver.org.
+This package uses Semantic Versioning, see: https://semver.org.
 """
 from __future__ import annotations
 
@@ -8,10 +8,4 @@ MAJOR = 0
 MINOR = 1
 MICRO = 0
 
-__author__ = "Kieran Ryan"
-__copyright__ = f"Copyright 2021 {__author__}"
-__description = "A sample Python library."
-__license__ = "MIT"
-__title__ = "pysamplelib"
-__url__ = "https://github.com/kieran-ryan/python-library-template"
 __version__ = f"{MAJOR}.{MINOR}.{MICRO}"
