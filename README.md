@@ -27,6 +27,7 @@ A template repository for creating Python packages.
   - [blacken-docs](https://pypi.org/project/blacken-docs/) - code style formatting in docs
   - [pyupgrade](https://github.com/asottile/pyupgrade) - latest syntax upgrades
   - [radon](https://pypi.org/project/radon/) - code quality metrics
+  - [pytest](https://docs.pytest.org) - testing
   - [coverage](https://coverage.readthedocs.io/en/6.2/) - test coverage metrics
   - [sphinx](https://www.sphinx-doc.org/en/master/) - documentation
   - [build](https://github.com/pypa/build) - packaging

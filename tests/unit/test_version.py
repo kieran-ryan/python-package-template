@@ -2,20 +2,21 @@
 
 from __future__ import annotations
 
-import unittest
-
 import packaging.version
+import pytest
 
 from pysamplelib.__version__ import __version__
 
 
-class TestVersion(unittest.TestCase):
-    """Test `version.py` contains a valid `__version__`."""
-
-    def test_version_is_valid(self):
-        """Package version is valid."""
-        parsed_version = packaging.version.parse(__version__)
-        assert isinstance(parsed_version, packaging.version.Version)
-        assert isinstance(parsed_version.major, int)
-        assert isinstance(parsed_version.minor, int)
-        assert isinstance(parsed_version.micro, int)
+@pytest.mark.parametrize(
+    ("version_component", "version_type"),
+    [
+        (packaging.version.parse(__version__), packaging.version.Version),
+        (packaging.version.parse(__version__).major, int),
+        (packaging.version.parse(__version__).minor, int),
+        (packaging.version.parse(__version__).micro, int),
+    ],
+)
+def test_version_is_valid(version_component, version_type):
+    """Package version is valid."""
+    assert isinstance(version_component, version_type)
