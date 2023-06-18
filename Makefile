@@ -11,9 +11,5 @@ build:
 	pip install build
 	python -m build
 
-publish:
-	pip install twine
-	python -m twine upload --repository testpypi dist/*
-
 docs:
 	cd docs && make html

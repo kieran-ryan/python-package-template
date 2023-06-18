@@ -20,6 +20,7 @@ A template repository for creating Python packages.
   - `OWNERS.md` outlining owners and roles
   - `README.md` overview documentation
 - Tool configuration:
+  - [editorconfig](https://editorconfig.org) - universal editor configuration
   - [ruff](https://github.com/charliermarsh/ruff) - linting
   - [mypy](https://mypy.readthedocs.io) - type checking
   - [bandit](https://bandit.readthedocs.io/en/latest/) - vulnerability detection
