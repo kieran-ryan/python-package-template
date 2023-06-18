@@ -26,6 +26,10 @@ jobs:
         run: ruff .
       - name: Check Python formatting
         run: black . --check
+      - name: Check cyclomatic complexity
+        run: radon cc .
+      - name: Check maintainability index
+        run: radon mi .
       - name: Check types
         run: mypy .
       - name: Check security issues
