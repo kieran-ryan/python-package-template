@@ -41,6 +41,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.todo",
+    "sphinx_mdinclude",
 ]
 
 # Paths containing templates, relative to this directory.

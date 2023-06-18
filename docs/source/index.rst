@@ -1,8 +1,10 @@
 .. python-package-template documentation master file, created by
    sphinx-quickstart on Sun Dec 13 09:34:56 2021.
 
-Python Package Template
-=======================
+.. mdinclude:: ../../README.md
+
+Table Of Contents
+=================
 
 .. toctree::
    :maxdepth: 2
