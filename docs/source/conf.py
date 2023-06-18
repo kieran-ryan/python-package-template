@@ -49,7 +49,7 @@ exclude_patterns = [
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.
-html_theme = "alabaster"
+html_theme = "furo"
 
 # Paths containing custom static files (such as style sheets), relative
 # to this directory. They are copied after the builtin static files,

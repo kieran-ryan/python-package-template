@@ -40,12 +40,12 @@ total_average = true
 [tool.ruff]
 select = ["ALL", "I002"]
 ignore = [
-    "ANN",
-    "ARG",
-    "DTZ005",
+    "ANN",    # flake8-annotations
+    "ARG",    # flake8-unused-arguments
+    "DTZ005", # call-datetime-now-without-tzinfo
     "D203",
     "D213",
-    "G004",
+    "G004",   # logging-f-string
     "INP001",
     "S101",
     "S102",
