@@ -7,8 +7,11 @@ author = "Kieran Ryan"
 name = "pysamplelib"
 description = "A sample Python library."
 
+[tool.bandit]
+exclude_dirs = ["tests", "venv"]
+
 [tool.black]
-experimental-string-processing = true
+preview = true
 
 [tool.coverage.html]
 directory = "docs/coverage"

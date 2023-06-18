@@ -31,7 +31,7 @@ jobs:
       - name: Check types
         run: mypy .
       - name: Check security issues
-        run: bandit .
+        run: bandit --configfile=pyproject.toml --severity-level=medium --recursive .
       - name: Check performance issues
         run: perflint .
 
