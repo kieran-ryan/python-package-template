@@ -14,23 +14,27 @@ A template repository for creating Python packages.
 
 - Common repository files:
   - `.gitignore` with common files to be excluded by git for Python
-  - `.pre-commit-config.yaml` with common pre-commit validation for Python
+  - `.pre-commit-config.yaml` with automated pre-commit validation for Python
   - `LICENSE` outlining usage rights
   - `Makefile` standardising commands
+  - `CODE_OF_CONDUCT.md` outlining community practice
   - `OWNERS.md` outlining owners and roles
   - `README.md` overview documentation
 - Tool configuration:
   - [editorconfig](https://editorconfig.org) - universal editor configuration
   - [ruff](https://github.com/charliermarsh/ruff) - linting
+  - [perflint](https://github.com/tonybaloney/perflint) - linting performance anti-patterns
   - [mypy](https://mypy.readthedocs.io) - type checking
   - [bandit](https://bandit.readthedocs.io/en/latest/) - vulnerability detection
   - [black](https://black.readthedocs.io/en/stable/) - code style formatting
   - [blacken-docs](https://pypi.org/project/blacken-docs/) - code style formatting in docs
   - [pyupgrade](https://github.com/asottile/pyupgrade) - latest syntax upgrades
   - [radon](https://pypi.org/project/radon/) - code quality
+  - [removestar](https://github.com/asmeurer/removestar) - automated removal of wildcard imports (*)
   - [pytest](https://docs.pytest.org) - testing
   - [coverage](https://coverage.readthedocs.io/en/6.2/) - test coverage
   - [sphinx](https://www.sphinx-doc.org/en/master/) - documentation
+  - [GitHub Pages](https://pages.github.com) - documentation deployment and hosting
   - [build](https://github.com/pypa/build) - packaging
   - [twine](https://twine.readthedocs.io/en/stable/pip) - deployment
 - Examples:
