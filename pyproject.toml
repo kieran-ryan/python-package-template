@@ -19,7 +19,7 @@ classifiers = [
 dynamic = ["version"]
 
 [project.urls]
-Documentation = "https://github.com/kieran-ryan/python-package-template/tree/main#readme"
+Documentation = "https://kieran-ryan.github.io/python-package-template/"
 Source = "https://github.com/kieran-ryan/python-package-template"
 Tracker = "https://github.com/kieran-ryan/python-package-template/issues"
 
@@ -37,7 +37,7 @@ directory = "docs/coverage"
 
 [tool.coverage.run]
 branch = true
-omit = ["*/venv/*", "*/tests/*"]
+omit = ["*/tests/*", "*/venv/*"]
 
 [tool.coverage.report]
 fail_under = 90.00
