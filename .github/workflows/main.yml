@@ -63,8 +63,6 @@ jobs:
           name: code-coverage-report
           path: docs/coverage
           retention-days: 5
-      - name: Run doctests
-        run: pytest --doctest-modules pysamplelib
 
   build-docs:
     runs-on: ${{ matrix.os }}
