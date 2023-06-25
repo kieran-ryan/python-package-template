@@ -40,6 +40,10 @@ branch = true
 omit = ["*/tests/*", "*/venv/*"]
 
 [tool.coverage.report]
+exclude_lines = [
+    # TYPE_CHECKING blocks are never executed during pytest run
+    "if typing.TYPE_CHECKING:",
+]
 fail_under = 90.00
 show_missing = true
 
