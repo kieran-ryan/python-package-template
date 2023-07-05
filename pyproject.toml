@@ -1,33 +1,39 @@
 [build-system]
 build-backend = "flit.buildapi"
-requires = ["flit"]
+requires = [
+    "flit",
+]
 
 [project]
-authors = [{ name = "Kieran Ryan" }]
-name = "pysamplelib"
-description = "A sample Python package."
-readme = "README.md"
+authors = [
+    { name = "Kieran Ryan" },
+]
 classifiers = [
-    "License :: OSI Approved :: MIT License",
     "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
     "Operating System :: MacOS",
     "Operating System :: Microsoft :: Windows",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
 ]
-dynamic = ["version"]
+description = "A sample Python package."
+dynamic = [
+    "version",
+]
+name = "pysamplelib"
+readme = "README.md"
 
 [project.urls]
 Documentation = "https://kieran-ryan.github.io/python-package-template/"
 Source = "https://github.com/kieran-ryan/python-package-template"
 Tracker = "https://github.com/kieran-ryan/python-package-template/issues"
 
-[tool.flit.module]
-name = "pysamplelib"
-
 [tool.bandit]
-exclude_dirs = ["tests", "venv"]
+exclude_dirs = [
+    "tests",
+    "venv",
+]
 
 [tool.black]
 preview = true
@@ -35,24 +41,49 @@ preview = true
 [tool.coverage.html]
 directory = "docs/coverage"
 
-[tool.coverage.run]
-branch = true
-omit = ["*/tests/*", "*/venv/*"]
-
 [tool.coverage.report]
 exclude_lines = [
-    # TYPE_CHECKING blocks are never executed during pytest run
     "if typing.TYPE_CHECKING:",
 ]
-fail_under = 90.00
+fail_under = 90.0
 show_missing = true
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "*/tests/*",
+    "*/venv/*",
+]
 
 [tool.coverage.xml]
 output = "docs/coverage/coverage.xml"
 
+[tool.flit.module]
+name = "pysamplelib"
+
 [tool.isort]
 profile = "black"
 src_paths = "pysamplelib"
+
+[tool.mypy]
+exclude = "__init__.py|setup.py|docs|tests|venv"
+files = "."
+mypy_path = "pysamplelib"
+
+[tool.pylint]
+ignore = [
+    "docs",
+    "tests",
+    "venv",
+]
+recursive = true
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules -rA --verbose"
+testpaths = [
+    "pysamplelib",
+    "tests",
+]
 
 [tool.radon]
 exclude = "tests/*,venv/*"
@@ -61,34 +92,26 @@ show_mi = true
 total_average = true
 
 [tool.ruff]
-select = ["ALL", "I002"]
 ignore = [
-    "ANN",    # flake8-annotations
-    "ARG",    # flake8-unused-arguments
-    "DTZ005", # call-datetime-now-without-tzinfo
-    "D203",   # one-blank-line-before-class
-    "D213",   # multi-line-summary-second-line
-    "G004",   # logging-f-string
-    "INP001", # implicit-namespace-package
-    "S101",   # assert
-    "T201",   # sys-version-info0-eq3
+    "ANN",
+    "ARG",
+    "D203",
+    "D213",
+    "DTZ005",
+    "G004",
+    "INP001",
+    "S101",
+    "T201",
+]
+select = [
+    "ALL",
+    "I002",
 ]
 
 [tool.ruff.isort]
-required-imports = ["from __future__ import annotations"]
+required-imports = [
+    "from __future__ import annotations",
+]
 
 [tool.ruff.pydocstyle]
 convention = "google"
-
-[tool.mypy]
-mypy_path = "pysamplelib"
-files = "."
-exclude = "__init__.py|setup.py|docs|tests|venv"
-
-[tool.pylint]
-recursive = true
-ignore = ["docs", "tests", "venv"]
-
-[tool.pytest.ini_options]
-addopts = "--doctest-modules -rA --verbose"
-testpaths = ["pysamplelib", "tests"]
