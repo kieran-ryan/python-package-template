@@ -1,6 +1,5 @@
 --requirement requirements-docs.txt
 --requirement requirements-test.txt
-bandit==1.7.5
 mypy==0.971
 perflint==0.7.3
 pre-commit==3.3.3

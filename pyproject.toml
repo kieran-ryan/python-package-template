@@ -29,12 +29,6 @@ Documentation = "https://kieran-ryan.github.io/python-package-template/"
 Source = "https://github.com/kieran-ryan/python-package-template"
 Tracker = "https://github.com/kieran-ryan/python-package-template/issues"
 
-[tool.bandit]
-exclude_dirs = [
-    "tests",
-    "venv",
-]
-
 [tool.coverage.html]
 directory = "docs/coverage"
 

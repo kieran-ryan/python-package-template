@@ -22,13 +22,12 @@ A template repository for creating Python packages.
   - `README.md` overview documentation
 - Tool configuration:
   - [editorconfig](https://editorconfig.org) - universal editor configuration
-  - [ruff](https://github.com/charliermarsh/ruff) - linting and formatting
+  - [ruff](https://github.com/charliermarsh/ruff) - linting, formatting and vulnerabilities
   - [perflint](https://github.com/tonybaloney/perflint) - linting performance anti-patterns
   - [mypy](https://mypy.readthedocs.io) - type checking
-  - [bandit](https://bandit.readthedocs.io/en/latest/) - vulnerability detection
   - [pyupgrade](https://github.com/asottile/pyupgrade) - latest syntax upgrades
   - [radon](https://pypi.org/project/radon/) - code quality
-  - [removestar](https://github.com/asmeurer/removestar) - automated removal of wildcard imports (*)
+  - [removestar](https://github.com/asmeurer/removestar) - automated removal of wildcard imports (\*)
   - [pytest](https://docs.pytest.org) - testing
   - [coverage](https://coverage.readthedocs.io/en/6.2/) - test coverage
   - [sphinx](https://www.sphinx-doc.org/en/master/) - documentation
