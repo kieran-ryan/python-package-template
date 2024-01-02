@@ -13,7 +13,7 @@ _KEYWORD_MAPPING: dict[int, str] = collections.OrderedDict(
 )
 
 
-def fizzbuzz(number: int | float, keyword_mapping: dict[int, str] | None = None) -> str:
+def fizzbuzz(number: float, keyword_mapping: dict[int, str] | None = None) -> str:
     """Run FizzBuzz against a number.
 
     Returns the number itself, unless it is divisible by any of the keys

@@ -23,9 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install --requirement requirements-dev.txt
       - name: Lint Python code
-        run: ruff .
+        run: ruff check
       - name: Check Python formatting
-        run: black . --check
+        run: ruff format --check
       - name: Check pyproject.toml formatting
         run: pyprojectsort --check
       - name: Check cyclomatic complexity

@@ -1,8 +1,12 @@
 {
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "files.trimTrailingWhitespace": true,
   "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    ".pytest_cache": true,
+    ".ruff_cache": true
+  },
+  "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features",
@@ -11,7 +15,9 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "python.formatting.provider": "none",
   "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true
+  "python.testing.pytestEnabled": true,
+  "search.exclude": {
+    "dist": true
+  }
 }

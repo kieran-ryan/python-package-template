@@ -35,9 +35,6 @@ exclude_dirs = [
     "venv",
 ]
 
-[tool.black]
-preview = true
-
 [tool.coverage.html]
 directory = "docs/coverage"
 
@@ -95,11 +92,13 @@ total_average = true
 ignore = [
     "ANN",
     "ARG",
+    "COM812",
     "D203",
     "D213",
     "DTZ005",
     "G004",
     "INP001",
+    "ISC001",
     "S101",
     "T201",
 ]
