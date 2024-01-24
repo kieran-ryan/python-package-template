@@ -1,7 +1,7 @@
 --requirement requirements-docs.txt
 --requirement requirements-test.txt
 mypy==0.991
-perflint==0.7.3
+perflint==0.8.1
 pre-commit==3.3.3
 pyprojectsort==0.3.0
 pyupgrade==3.7.0
