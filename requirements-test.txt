@@ -1,5 +1,5 @@
 --requirement requirements.txt
-coverage==6.5.0
+coverage==7.4.1
 packaging==23.2
 pytest==6.2.5
 pytest-cov==3.0.0
