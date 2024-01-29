@@ -8,5 +8,6 @@
     ":automergeBranch",
     ":automergeMinor"
   ],
+  "labels": ["dependencies"],
   "prHourlyLimit": 0
 }
