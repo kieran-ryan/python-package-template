@@ -8,6 +8,6 @@
     ":automergeBranch",
     ":automergeMinor"
   ],
-  "labels": ["dependencies"],
+  "labels": [":robot: dependencies"],
   "prHourlyLimit": 0
 }
