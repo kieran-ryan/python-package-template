@@ -82,7 +82,7 @@ show_complexity = true
 show_mi = true
 total_average = true
 
-[tool.ruff]
+[tool.ruff.lint]
 ignore = [
     "ANN",
     "ARG",
@@ -101,10 +101,10 @@ select = [
     "I002",
 ]
 
-[tool.ruff.isort]
+[tool.ruff.lint.isort]
 required-imports = [
     "from __future__ import annotations",
 ]
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 convention = "google"
