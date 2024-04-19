@@ -1,5 +1,5 @@
 --requirement requirements.txt
 furo==2024.1.29
-Sphinx==7.2.6
+Sphinx==7.3.7
 sphinx-mdinclude==0.5.4
 tomli==2.0.1
