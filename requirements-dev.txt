@@ -7,4 +7,4 @@ pyprojectsort==0.3.0
 pyupgrade==3.15.2
 radon[toml]==6.0.1
 removestar==1.5
-ruff==0.4.1
+ruff==0.4.2
