@@ -4,7 +4,7 @@ mypy==1.10.0
 perflint==0.8.1
 pre-commit==3.7.1
 pyprojectsort==0.3.0
-pyupgrade==3.15.2
+pyupgrade==3.16.0
 radon[toml]==6.0.1
 removestar==1.5
 ruff==0.4.8
