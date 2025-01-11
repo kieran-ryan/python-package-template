@@ -2,4 +2,4 @@
 furo==2024.8.6
 Sphinx==7.4.7
 sphinx-mdinclude==0.6.2
-tomli==2.0.1
+tomli==2.2.1
