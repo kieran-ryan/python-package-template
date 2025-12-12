@@ -58,7 +58,7 @@ jobs:
       - name: Run tests
         run: make coverage
       - name: Archive code coverage results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: code-coverage-report
           path: docs/coverage
