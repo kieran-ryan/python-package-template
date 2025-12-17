@@ -2,7 +2,7 @@
 --requirement requirements-test.txt
 mypy==1.19.0
 perflint==0.8.1
-pre-commit==3.8.0
+pre-commit==4.5.1
 pyprojectsort==0.4.0
 pyupgrade==3.21.2
 radon[toml]==6.0.1
